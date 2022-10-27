@@ -1,0 +1,42 @@
+@use "../../utils.scss";
+#input-form {
+    @include utils.flex-center();
+    position: absolute;
+    top: 10%;
+    width: 90%;
+    input {
+        position: relative;
+        width: 100%;
+        background: utils.$primary-color;
+        padding: 10px 10px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        &:focus {
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        &:focus~label,
+        &:valid~label {
+            position: absolute;
+            top: -70%;
+            color: #17508a;
+            font-size: 20px;
+            font-weight: bold;
+            opacity: 1;
+        }
+    }
+    label {
+        position: absolute;
+        left: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        opacity: 0.3;
+    }
+    button {
+        @include utils.btn();
+        &:hover {
+            scale: 1.1;
+        }
+        transition: utils.$transition;
+    }
+}

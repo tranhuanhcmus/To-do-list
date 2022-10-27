@@ -1,0 +1,49 @@
+#input-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+  width: 90%;
+}
+#input-form input {
+  position: relative;
+  width: 100%;
+  background: skyblue;
+  padding: 10px 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+#input-form input:focus {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+#input-form input:focus ~ label, #input-form input:valid ~ label {
+  position: absolute;
+  top: -70%;
+  color: #17508a;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 1;
+}
+#input-form label {
+  position: absolute;
+  left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.3;
+}
+#input-form button {
+  border: none;
+  font-size: 30px;
+  background: transparent;
+  transition: ease 0.2s;
+}
+#input-form button:hover {
+  color: #17508a;
+}
+#input-form button:hover {
+  scale: 1.1;
+}
+
+/*# sourceMappingURL=todoForm.css.map */

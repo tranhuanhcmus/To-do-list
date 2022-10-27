@@ -1,0 +1,24 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@keyframes zoomSlow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background: url("./assets/img/background.webp");
+}
+
+/*# sourceMappingURL=index.css.map */

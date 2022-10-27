@@ -1,0 +1,23 @@
+#App {
+    padding: 10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    width: 60vh;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.msg {
+    color: #17508a;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/*# sourceMappingURL=App.css.map */
